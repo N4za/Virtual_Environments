@@ -1,0 +1,84 @@
+h2{
+    color: aquamarine;
+    }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizign: border-box;
+    -moz-box-sizign: border-box;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: url(descarga.jfif);
+    
+  }
+  .estado{
+    color: darkcyan;
+    position: relative;
+    background: rgb(0, 0, 0, .7);
+    width: 70%;
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: bisque;
+  }
+  
+  
+  .fdn{
+    background: rgb(0, 0, 0, .7);
+    width: 70%;
+    padding: 1%;
+    margin-bottom: 0.1px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: bisque;
+  }
+  
+  .formulario, .datos {
+    background: rgb(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 1%;
+    border-radius: 9px;
+    font-size: 14px;
+    color: bisque;
+  }
+  
+  .btn-submit {
+    width: 70%;
+    font-family: Roboto;
+    outline: none;
+    background:rgb(124, 168, 124);
+    font-size: 16px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+  }
+  
+  .btn-submit:hover {
+    background: rgb(60, 98, 88);
+  }
+  
+  .custom-control, .custom-radio{
+    background: rgb(0, 0, 0, .7);
+    width: 70%;
+    padding: 1%;
+    margin-bottom: 0.1px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: bisque;
+  }
+  
+  .edad {
+    background: rgb(0, 0, 0, .7);
+    width: 70%;
+    padding: 1%;
+    margin-bottom: 0.1px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: bisque;
+  }
