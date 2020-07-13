@@ -1,185 +1,93 @@
-<html>
-    <title>Formulario</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
+<h1>FORMULARIO BOOTSTRAP FRAMEWORK</h1>
+<p>Registra tus datos de manera correcta en cada campo que lo solicita<p>
 
-body{
-  font-family: 'Bebas Neue', cursive;
-}
-a, th,h1, .pure-control-group, h4{
-  color:orange; 
-}
-
-header{
-  width: 100%;
-  padding: 0px;
-  color: white;
-  text-align: center;
-}
-nav ul li{
-  display: inline-block;
-  padding: 15px;
-}
-nav ul{
-    width: 100%;
-    background-color: rgb(130, 243, 224);
-    color:white;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    letter-spacing: normal;
-    overflow: hidden;
-    -webkit-transition: max-height 0.4s;
-    -ms-transition: max-height 0.4s;
-    -moz-transition: max-height 0.4s;
-    -o-transition: max-height 0.4s;
-    transition: max-height 0.4s;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-    display: absolute;
-}
-section{
-    line-height: 1.5em;
-    font-size: 0.9em;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 960px;
-}
-      </style>
-    <body>
-          <br>
-          <nav>
-            <ul>
-                <a href="list.html">
-                    <li>
-                      <h4>LISTA</h4>
-                    </li>
-                  </a>
-                  <a href="insert.html">
-                    <li>
-                      <h4>INSERTAR</h4>
-                    </li>
-                  </a>
-                  <a href="delete.html">
-                    <li>
-                      <h4>BORRA</h4>
-                    </li>
-                  </a>
-                  <a href="view.html">
-                    <li>
-                      <h4>VER ALUMNO</h4>
-                    </li>
-                  </a>
-                  <a href="update.html">
-                    <li>
-                      <h4>MODIFICAR</h4>
-                    </li>
-                  </a>  
-            </ul>
-          </nav>
-    <center>
-    <form class="pure-form pure-form-aligned">
-        <div class="inputBox">
-            <h1>FORMULARIO</h1>
-        <fieldset>
-            <div class="pure-control-group">
-                <input type="text" id="aligned-number" placeholder="Matricula" />
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <input type="text" id="aligned-name" placeholder="Nombre" required />
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <input type="text" id="aligned-apepate" placeholder="Apellido Paterno" required/>
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <input type="text" id="aligned-apemate" placeholder="Apellido Materno" required/>
-                <span class="validity"></span>
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <label for="stacked-state">Edad</label>
-                <select id="stacked-state">
-                    <option>Elige</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                </select>  años
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <label for="stacked-state">Fecha de Nacimiento</label>
-                <input type="date" id="party" min="1975-01-01" max="2050-01-01" required>
-                <span class="validity"></span>
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <label for="stacked-state">Sexo</label>
-                    <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" value="option1" checked="" /> Femenino</label>
-                    <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" value="option1" checked="" /> Masculino</label>
-            </div>
-            <br>
-            <div class="pure-control-group">
-                <label for="stacked-state">Estado</label>
-                <select id="stacked-state">
-                    <option>SELECCIONA</option>
-                    <option value="1">Aguascalientes</option>
-                    <option value="2">Baja California</option>
-                    <option value="3">Baja California Sur</option>
-                    <option value="4">Campeche</option>
-                    <option value="5">Chiapas</option>
-                    <option value="6">Chihuahua</option>
-                    <option value="7">Coahuila de Zaragoza</option>
-                    <option value="8">Colima</option>
-                    <option value="9">Durango</option>
-                    <option value="10">Estado de México</option>
-                    <option value="11">Guanajuato</option>
-                    <option value="12">Guerrero</option>
-                    <option value="13">Hidalgo</option>
-                    <option value="14">Jalisco</option>
-                    <option value="15">Michoacán de Ocampo</option>
-                    <option value="16">Morelos</option>
-                    <option value="17">Nayarit</option>
-                    <option value="18">Nuevo León</option>
-                    <option value="19">Oaxaca</option>
-                    <option value="20">Puebla</option>
-                    <option value="21">Querétaro</option>
-                    <option value="22">Quintana Roo</option>
-                    <option value="23">San Luis Potosí</option>
-                    <option value="24">Sinaloa</option>
-                    <option value="25">Sonora</option>
-                    <option value="26">Tabasco</option>
-                    <option value="27">Tamaulipas</option>
-                    <option value="28">Tlaxcala</option>
-                    <option value="29"> de Ignacio de la Llave</option>
-                    <option value="30">Yucatán</option>
-                    <option value="31">Zacatecas</option>
-                </select>
-            </div>
-            <br>
-            <div class="pure-controls">
-                <label for="aligned-cb" class="pure-checkbox">
-                <button type="submit" class="pure-button pure-button-primary">Guardar</button>
-            </div>
+<form method="POST" action="">
+    <div class="form-group">
+        <label for="matricula">Matricula</label>
+        <input type="text" class="form-control" name="matricula" placeholder="Ingresa matricula"  required>
+    </div>
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" name="name" placeholder="Ingresa nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="onelastname">Primer Apellido</label>
+        <input type="text" class="form-control" name="onelastname" placeholder="Ingresa primer apellido" required>
+    </div>
+    <div class="form-group">
+        <label for="twolastname">Segundo Apellido</label>
+        <input type="text" class="form-control" name="twolastname" placeholder="Ingresa segundo apellido" required>
+    </div>
+    <div class="pure-control-group">
+      <label for="stacked-state">Edad</label>
+      <select id="stacked-state">
+          <option>Elige</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+      </select>  años
+    </div>
+    <div class="form-group">
+        <label for="borndate">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" name="borndate" placeholder="Introduce fecha de nacimiento">
+    </div>
+    <div class="form-group">
+        <label for="sex">Sexo</label>
+        <select name="sex" class="form-control">
+            <option selected>Seleccionar...</option>
+            <option>Femenino</option>
+            <option>Masculino</option>
+            <option>Otro</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="state">Estado</label>
+        <select name="state" class="form-control">
+            <option selected>Seleccionar...</option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+            <option>Baja California Sur</option>
+            <option>Campeche</option>
+            <option>Chiapas</option>
+            <option>Chihuahua</option>
+            <option>Coahuila de Zaragoza</option>
+            <option>Colima</option>
+            <option>Durango</option>
+            <option>Estado de México</option>
+            <option>Guanajuato</option>
+            <option>Guerrero</option>
+            <option>Hidalgo</option>
+            <option>Jalisco</option>
+            <option>Michoacán de Ocampo</option>
+            <option>Morelos</option>
+            <option>Nayarit</option>
+            <option>Nuevo León</option>
+            <option>Oaxaca</option>
+            <option>Puebla</option>
+            <option>Querétaro</option>
+            <option>Quintana Roo</option>
+            <option>San Luis Potosí</option>
+            <option>Sinaloa</option>
+            <option>Sonora</option>
+            <option>Tabasco</option>
+            <option>Tamaulipas</option>
+            <option>Tlaxcala</option>
+            <option>Veracruz</option>
+            <option>Yucatán</option>
+            <option>Zacatecas</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12 text-center">
+            <button class="btn btn-primary" type= "submit">Insert</button>
+            <button class="btn btn-dark" onclick="history.back()">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z"/>
+                </svg> Back
+            </button>
         </div>
-        </fieldset>
-    </form>
-    </center>
-
-    <body background="https://image.freepik.com/foto-gratis/codigo-programacion-resumen-antecedentes-tecnologia-desarrollador-software-script-computadora_34663-31.jpg">
-    </body>
-    </body>
-</html>
+    </div><br>
+</form>

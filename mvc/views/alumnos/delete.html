@@ -1,131 +1,96 @@
-<html>
-  <title>Formulario</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- dejamos solo lo que estara dentro del body -->
+<h1>DELETE STUDENTS</h1>
 
-  <style type="text/css">
-body{
-  font-family: 'Bebas Neue', cursive;
-}
-a, th{
-  color:orange; 
-}
-header{
-  width: 100%;
-  padding: 0px;
-  color: white;
-  text-align: center;
-}
-nav ul{
-  width: 100%;
-  background-color:rgb(130, 243, 224);
-  color:rgb(1, 4, 22);
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  letter-spacing: normal;
-  overflow: hidden;
-  -webkit-transition: max-height 0.4s;
-  -ms-transition: max-height 0.4s;
-  -moz-transition: max-height 0.4s;
-  -o-transition: max-height 0.4s;
-  transition: max-height 0.4s;
-}
-
-nav ul li{
-  display: inline-block;
-  padding: 15px;
-}
-
-a{
-  text-decoration: none;
-  display: absolute;
-}
-section{
-  line-height: 1.9em;
-  font-size: 1.9em;
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 960px;
-}
-input{
-  width: 100%;
-  outline: none;
-  background:rgb(134, 168, 158);
-  font-size: 16px;
-  border: none;
-  color: white;
-  padding: 10px 0;
-  cursor: pointer;
-  transition: all .5s ease
-}
-    </style>
-  <body>
-        <br>
-        <nav>
-          <ul>
-              <a href="list.html">
-                  <li>
-                    <h4>LISTA</h4>
-                  </li>
-                </a>
-                <a href="insert.html">
-                  <li>
-                    <h4>INSERTAR</h4>
-                  </li>
-                </a>
-                <a href="delete.html">
-                  <li>
-                    <h4>BORRA</h4>
-                  </li>
-                </a>
-                <a href="view.html">
-                  <li>
-                    <h4>VER ALUMNO</h4>
-                  </li>
-                </a>
-                <a href="update.html">
-                  <li>
-                    <h4>MODIFICAR</h4>
-                  </li>
-                </a>  
-          </ul>
-        </nav>
-<body>
-        <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Matricula</th><br>
-                <th scope="col">Nombre</th>
-                <th scope="col">Primer apellido</th>
-                <th scope="col">Segundo apellido</th>
-                <th scope="col">Edad</th>
-                <th scope="col">Fecha de nacimiento</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Estado</th>
-                <th scope="col">Eliminar</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td><input type="reset"  value="BORRA"></td>
-                </tr>
-              </tbody>
-          </table>
-          <body background="https://image.freepik.com/foto-gratis/codigo-programacion-resumen-antecedentes-tecnologia-desarrollador-software-script-computadora_34663-31.jpg">
-      </body>
-    </body>
-</html>
+<form>
+    <div class="form-group">
+        <label for="matricula">Matricula</label>
+        <input type="text" class="form-control" name="matricula" placeholder="Introduce matricula" required>
+    </div>
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" name="name" placeholder="Ingresa nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="onelastname">Primer Apellido</label>
+        <input type="text" class="form-control" name="onelastname" placeholder="Ingresa primer apellido" required>
+    </div>
+    <div class="form-group">
+        <label for="twolastname">Segundo Apellido</label>
+        <input type="text" class="form-control" name="twolastname" placeholder="Ingresa segundo apellido" required>
+    </div>
+    <div class="pure-control-group">
+        <label for="stacked-state">Edad</label>
+        <select id="stacked-state">
+            <option>Elige</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+        </select>  años
+    </div>
+    <div class="form-group">
+        <label for="borndate">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" name="borndate" placeholder="Ingresa fecha de nacimiento" required>
+    </div>
+    <div class="form-group">
+        <label for="sex">Sexo</label>
+        <select name="sex" class="form-control">
+            <option selected>Seleccionar...</option>
+            <option>Femenino</option>
+            <option>Masculino</option>
+            <option>Otro</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="state">Estado</label>
+        <select name="state" class="form-control">
+            <option selected>Seleccionar...</option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+            <option>Baja California Sur</option>
+            <option>Campeche</option>
+            <option>Chiapas</option>
+            <option>Chihuahua</option>
+            <option>Coahuila de Zaragoza</option>
+            <option>Colima</option>
+            <option>Durango</option>
+            <option>Estado de México</option>
+            <option>Guanajuato</option>
+            <option>Guerrero</option>
+            <option>Hidalgo</option>
+            <option>Jalisco</option>
+            <option>Michoacán de Ocampo</option>
+            <option>Morelos</option>
+            <option>Nayarit</option>
+            <option>Nuevo León</option>
+            <option>Oaxaca</option>
+            <option>Puebla</option>
+            <option>Querétaro</option>
+            <option>Quintana Roo</option>
+            <option>San Luis Potosí</option>
+            <option>Sinaloa</option>
+            <option>Sonora</option>
+            <option>Tabasco</option>
+            <option>Tamaulipas</option>
+            <option>Tlaxcala</option>
+            <option>Veracruz</option>
+            <option>Yucatán</option>
+            <option>Zacatecas</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12 text-center">
+            <button type="reset" class="btn btn-danger">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                </svg> Delete</button>
+            <button class="btn btn-primary" onclick="history.back()">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z"/>
+                </svg> Back
+            </button>
+        </div>
+    </div>
+</form>
