@@ -1,5 +1,6 @@
 import mysql.connector
 
+
 class Alumnos():
 
     def connect(self):

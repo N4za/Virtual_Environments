@@ -2,6 +2,7 @@ import web
 
 render = web.template.render("mvc/views/alumnos/", base="template")
 
+
 class Insert():
 
     def GET(self):

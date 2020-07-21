@@ -14,3 +14,5 @@ class List():
             return render.list(result) # renderizando list.html
         except Exception as e:
             return "Error " + str(e.args)
+
+            

@@ -9,3 +9,4 @@ class Delete():
             return render.delete() # renderizando delete.html
         except Exception as e:
             return "Error " + str(e.args)
+            
